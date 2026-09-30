@@ -1,0 +1,45 @@
+{
+  "effect": {
+    "type": "String",
+    "defaultValue": "DeployIfNotExists",
+    "allowedValues": [
+      "DeployIfNotExists",
+      "Disabled"
+    ],
+    "metadata": {
+      "displayName": "Effect",
+      "description": "Enable or disable deployment of the security contact."
+    }
+  },
+  "emailAddress": {
+    "type": "String",
+    "metadata": {
+      "displayName": "Security contact email address",
+      "description": "Email address that receives Microsoft Defender for Cloud security notifications."
+    }
+  },
+  "alertNotifications": {
+    "type": "String",
+    "defaultValue": "On",
+    "allowedValues": [
+      "On",
+      "Off"
+    ],
+    "metadata": {
+      "displayName": "Alert notifications",
+      "description": "Send security alert notifications to the configured email address."
+    }
+  },
+  "alertsToAdmins": {
+    "type": "String",
+    "defaultValue": "On",
+    "allowedValues": [
+      "On",
+      "Off"
+    ],
+    "metadata": {
+      "displayName": "Alerts to subscription admins",
+      "description": "Send security alert notifications to subscription administrators."
+    }
+  }
+}
